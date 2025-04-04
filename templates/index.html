@@ -2,13 +2,7 @@
 <html>
 <head>
     <title>Email Spam Detection</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 30px; }
-        h1 { color: #333; }
-        textarea { width: 100%; height: 150px; font-size: 16px; margin-top: 10px; }
-        button { padding: 10px 20px; font-size: 16px; margin-top: 10px; }
-        .result { margin-top: 20px; font-size: 20px; font-weight: bold; }
-    </style>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <h1>Email Spam Detection</h1>
@@ -20,5 +14,7 @@
     {% if prediction_text %}
         <div class="result">{{ prediction_text }}</div>
     {% endif %}
+
+    <script src="/static/script.js"></script>
 </body>
 </html>
